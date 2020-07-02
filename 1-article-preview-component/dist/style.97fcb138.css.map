@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;AAEC;EACC","file":"style.97fcb138.css","sourceRoot":"..","sourcesContent":[".attribution {\n  font-size: 11px;\n  text-align: center;\n\n   a {\n    color: hsl(228, 45%, 44%);\n  }\n}\n"]}
