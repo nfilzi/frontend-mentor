@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "sass": "^1.26.9"
+  },
+  "dependencies": {
+    "stimulus": "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/stimulus.tar.gz"
   }
 }

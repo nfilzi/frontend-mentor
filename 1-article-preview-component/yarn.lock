@@ -2,6 +2,26 @@
 # yarn lockfile v1
 
 
+"@stimulus/core@https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/core.tar.gz":
+  version "1.1.1"
+  resolved "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/core.tar.gz#03ea0bb10e85684dab4151bd5ae1a767cc5c52a9"
+  dependencies:
+    "@stimulus/mutation-observers" "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/mutation-observers.tar.gz"
+
+"@stimulus/multimap@https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/multimap.tar.gz":
+  version "1.1.1"
+  resolved "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/multimap.tar.gz#3f64d0aa7aa49d10060004f0e26a400810a54590"
+
+"@stimulus/mutation-observers@https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/mutation-observers.tar.gz":
+  version "1.1.1"
+  resolved "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/mutation-observers.tar.gz#33a01c587b9fa09cb7378dc9b54a83fdebd70bfa"
+  dependencies:
+    "@stimulus/multimap" "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/multimap.tar.gz"
+
+"@stimulus/webpack-helpers@https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/webpack-helpers.tar.gz":
+  version "1.1.1"
+  resolved "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/webpack-helpers.tar.gz#1f1b3d79ed21ec4930f28cb65fa0868bcbe96042"
+
 anymatch@~3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.1.tgz#c55ecf02185e2469259399310c173ce31233b142"
@@ -103,6 +123,13 @@ sass@^1.26.9:
   integrity sha512-t8AkRVi+xvba4yZiLWkJdgJHBFCB3Dh4johniQkPy9ywkgFHNasXFEFP+RG/F6LhQ+aoE4aX+IorIWQjS0esVw==
   dependencies:
     chokidar ">=2.0.0 <4.0.0"
+
+"stimulus@https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/stimulus.tar.gz":
+  version "1.1.1"
+  resolved "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/stimulus.tar.gz#6e0e097d712641214cc066e1b7aa83d308f0488c"
+  dependencies:
+    "@stimulus/core" "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/core.tar.gz"
+    "@stimulus/webpack-helpers" "https://github.com/stimulusjs/dev-builds/archive/b8cc8c4/@stimulus/webpack-helpers.tar.gz"
 
 to-regex-range@^5.0.1:
   version "5.0.1"

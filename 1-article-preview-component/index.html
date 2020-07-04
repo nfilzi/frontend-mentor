@@ -12,42 +12,60 @@
     </style>
   </head>
   <body>
-    <article class="article">
-      <img class="article__picture" src="images/drawers.jpg" alt="">
-      <header>
-        <h3>
-          Shift the overall look and feel by adding these wonderful touches to furniture in your home
-        </h3>
-        <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
-      </header>
 
-      <footer class="article__share-menu--closed">
-        <div class="article__footer__left">
-          <img class="article__author-picture" src="images/avatar-michelle.jpg" alt="">
-          <div class="article__general-infos">
-            <p class="article__general-infos__author">Michelle Appleton</p>
-            <time class="article__general-infos__publication-date">28 Jun 2020</time>
+    <div style="display:flex;">
+      <article class="article"
+        data-controller="toggle"
+        data-toggle-hidden-class="hidden">
+
+        <img class="article__picture" src="images/drawers.jpg" alt="">
+        <header>
+          <h3>
+            Shift the overall look and feel by adding these wonderful touches to furniture in your home
+          </h3>
+          <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        </header>
+
+        <footer
+          class="article__share-menu--closed"
+          data-toggle-target="togglable">
+          <div class="article__footer__left">
+            <img class="article__author-picture" src="images/avatar-michelle.jpg" alt="">
+            <div class="article__general-infos">
+              <p class="article__general-infos__author">Michelle Appleton</p>
+              <time class="article__general-infos__publication-date">28 Jun 2020</time>
+            </div>
           </div>
-        </div>
 
-        <img class="article__share-icon" src="images/icon-share.svg" alt="">
-      </footer>
+          <img data-action="click->toggle#toggle" class="article__share-icon" src="images/icon-share.svg" alt="">
+        </footer>
 
-      <footer class="article__share-menu--open">
-        <p>Share</p>
-        <ul>
-          <li><img src="images/icon-facebook.svg"  alt=""></li>
-          <li><img src="images/icon-twitter.svg"   alt=""></li>
-          <li><img src="images/icon-pinterest.svg" alt=""></li>
-        </ul>
+        <footer
+          class="article__share-menu--open hidden"
+          data-toggle-target="togglable">
+          <div class="article__footer__left">
+            <p>Share</p>
+            <ul>
+              <li><img src="images/icon-facebook.svg"  alt=""></li>
+              <li><img src="images/icon-twitter.svg"   alt=""></li>
+              <li><img src="images/icon-pinterest.svg" alt=""></li>
+            </ul>
+          </div>
 
-        <img class="article__share-icon" src="images/icon-share.svg" alt="">
+          <img
+            data-action="click->toggle#toggle"
+            class="article__share-icon"
+            src="images/icon-share.svg"
+            alt="">
+        </footer>
+      </article>
+    </div>
 
-      </footer>
-    </article>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Nicolas Filzi</a>.
     </div>
+
+  <script src="./main.js"></script>
   </body>
 </html>
