@@ -1,13 +1,15 @@
 import { Application, Controller } from "stimulus"
 
 class ToggleController extends Controller {
-  static classes = [ "hidden" ]
+  static classes = [ "hidden", 'active' ]
   static targets = [ "togglable" ]
 
-  toggle() {
-    this.togglableTargets.forEach((toggableTarget) => {
-      toggableTarget.classList.toggle(this.hiddenClass)
-    })
+  toggle(e) {
+    // this.togglableTargets.forEach((toggableTarget) => {
+      this.togglableTarget.classList.toggle(this.hiddenClass)
+      console.log(e.currentTarget)
+      e.currentTarget.classList.toggle(this.activeClass)
+    // })
   }
 }
 
